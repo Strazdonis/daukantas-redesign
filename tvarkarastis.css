@@ -1,0 +1,93 @@
+/*
+	DAUKANTAS.LT REDESIGN
+	COLORS/DESIGN INSPIRED BY CAKEOS FROM NIIVU
+    ================= APPLY TO =================
+
+	https://www.daukantas.lt/_ed2/mok.php
+	https://www.daukantas.lt/_ed2/mok.php?ve=smx_tv
+	
+	================== COLORS ==================
+					hex				rgb
+    text:		 #c8c8c8;	rgb(200,200,200);
+    background1: #232323;	rgb(35,35,35);
+	background2: #191919;	rgb(25, 25, 25);
+	primary:	 ##6772e5;	rgb(103, 114, 229);
+
+    =========== DESIGN FUNDAMENTALS ============
+
+	some_background {
+		border-radius: 6px;
+    	background-color: #232323;
+    	border: 0;
+	}
+	input {
+		background-color: #3C3C3C;
+        color: rgb(200, 200, 200);
+        border: none;
+        border-radius: 2px;
+        padding: 5px;
+	}
+	input:not([type="submit"]):focus {
+ 		box-shadow: 0 0 0 2px rgb(103, 114, 229); //because borders mess up when rounded
+	}
+	some_headline {
+		background-color: rgba(0, 0, 0, 0);
+    	border: 0;
+    	color: rgb(200, 200, 200);
+    	text-decoration: underline;
+    	float: left;
+    	padding: 10px;
+	}
+	light box-shadows on element made by Bukis are a no-no so remove those.
+	================= TODO =================
+  this stylesheet specific: find more efficient selectors instead of nesting.
+	style basic elements(certain backgrounds,tables,inputs,buttons) in a `general` stylesheet
+	idk finish everything.
+*/
+
+
+body, .tv table {
+    margin: 0;
+	padding: 0;
+}
+.tv table {
+    color:rgb(200,200,200);
+    box-shadow:none;
+}
+.tv td, .tv th {
+    border:1px solid rgba(255,255,255,0.2);
+    height:40px;
+}
+.tv > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(2) {
+    color:#fff;
+}
+.tv tr:nth-child(2n) td {
+    background-color:rgba(255,255,255,0.1);
+    transition:0.2s ease-in;
+}
+.tv tr td:hover {
+    background-color:rgba(255,255,255,0.2);
+    transition:0.2s ease-in;
+    color:#fff;
+}
+.tv tr td:hover a {
+	color:#fff;
+}
+.tv > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(11), .tv > table:nth-child(1) > tbody:nth-child(11) > tr:nth-child(12) {
+    display:none;
+}
+body > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1), body > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) {
+    padding: 10px;
+	border: none;
+    color: white;
+    background: #393939;
+}
+body > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) {
+	display:block;
+    border-radius:0px 0px 10px 10px;
+    background: #393939;
+}
+body > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) {
+    text-align: right;
+    width: 89vw;
+}
