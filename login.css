@@ -1,0 +1,160 @@
+/*
+	DAUKANTAS.LT REDESIGN
+	COLORS/DESIGN INSPIRED BY CAKEOS FROM NIIVU
+    ================= APPLY TO =================
+
+	https://www.daukantas.lt/_ed2/index.php
+	https://www.daukantas.lt/_ed2/
+	
+	================== COLORS ==================
+					hex				rgb
+    text:		 #c8c8c8;	rgb(200,200,200);
+    background1: #232323;	rgb(35,35,35);
+	background2: #191919;	rgb(25, 25, 25);
+	primary:	 ##6772e5;	rgb(103, 114, 229);
+
+    =========== DESIGN FUNDAMENTALS ============
+
+	some_background {
+		border-radius: 6px;
+    	background-color: #232323;
+    	border: 0;
+	}
+	input {
+		background-color: #3C3C3C;
+        color: rgb(200, 200, 200);
+        border: none;
+        border-radius: 2px;
+        padding: 5px;
+	}
+	input:not([type="submit"]):focus {
+ 		box-shadow: 0 0 0 2px rgb(103, 114, 229); //because borders mess up when rounded
+	}
+	some_headline {
+		background-color: rgba(0, 0, 0, 0);
+    	border: 0;
+    	color: rgb(200, 200, 200);
+    	text-decoration: underline;
+    	float: left;
+    	padding: 10px;
+	}
+	light box-shadows on element made by Bukis are a no-no so remove those.
+	================= TODO =================
+    
+	style basic elements(certain backgrounds,tables,inputs,buttons) in a `general` stylesheet
+	idk finish everything.
+*/
+
+* {
+font-family: 'Roboto Condensed', sans-serif !important;
+}
+body {
+    background-color:#191919;
+    color:rgb(200, 200, 200);
+}
+.suk {
+    width:25vw;
+}
+table:not(.suk) td {
+    background-color:#232323;
+    border:0;
+    border-radius:6px;
+}
+table:not(.suk)[height="95%"] {
+    height:18vh;
+    margin-top:30vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:6px;
+}
+table:not(.suk)[height="95%"] table, table:not(.suk)[height="95%"] table i {
+    margin:0;
+    width:100%;
+    height:100%;
+    color:rgb(200, 200, 200);
+    font-style: normal;
+    transition:0.3s ease;
+}
+table:not(.suk)[height="95%"] table, table:not(.suk)[height="95%"] table i:hover {
+    color:#fff;
+    transition:0.3s ease;
+}
+body > table:not(.suk)[height="95%"] > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:not(:nth-child(3)) {
+    height:1px;
+}
+body > table:not(.suk)[height="95%"] > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(3) {
+    height:20px;
+}
+
+table:not(.suk)[height="95%"] table i {
+    background-color:rgb(103, 114, 229);
+    border-radius:5px;
+    min-width: 70px;
+    color:rgb(200, 200, 200);
+    padding:10px;
+    cursor:pointer;
+    text-decoration:none;
+    transition:0.3s ease;
+}
+body > table:not(.suk)[height="95%"] a:nth-child(1) {
+    text-decoration:none;
+}
+table:not(.suk)[height="95%"] table tbody:not(:first-child) {
+    margin:auto;
+}
+table:not(.suk)[height="95%"] table th {
+    background-color:rgba(0, 0, 0, 0);
+    border:0;
+    color:rgb(200, 200, 200);
+    text-decoration:underline;
+    float:left;
+    padding:10px;
+}
+.suk td {
+    border-radius:6px;
+    background-color:#232323;
+    border:0;
+}
+.suk form, .suk form table {
+    width:100%;
+    height:100%;
+}
+.suk table tbody:first-child th {
+    background-color:rgba(0, 0, 0, 0);
+    border:0;
+    color:rgb(200, 200, 200);
+    text-decoration:underline;
+    float:left;
+    padding:10px;
+}
+.suk form table tbody:first-child {
+    width: 1px;
+    height: 1px;
+}
+.suk form input:not([type="submit"]) {
+    width: 345px;
+    background-color: #3C3C3C;
+    color: rgb(200, 200, 200);
+    border: none;
+    border-radius: 2px;
+    padding:5px;
+}
+.suk form input:not([type="submit"]):focus {
+    box-shadow: 0 0 0 2px rgb(103, 114, 229);
+}
+.suk form .tdbr {
+    color:rgb(200, 200, 200);
+}
+.suk form input[name="ok"] {
+    background-color:rgb(103, 114, 229);
+    border-radius:5px;
+    min-width: 70px;
+    color:rgb(200, 200, 200);
+    padding:10px;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+.suk form input[name="ok"]:hover {
+    color:rgb(255, 255, 255);
+    transition:0.3s ease;
+}
