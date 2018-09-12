@@ -73,7 +73,7 @@ body, .tv table {
 .tv tr td:hover a {
 	color:#fff;
 }
-.tv > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(11), .tv > table:nth-child(1) > tbody:nth-child(11) > tr:nth-child(12) {
+.tv > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(11), .tv > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(12) {
     display:none;
 }
 body > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1), body > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) {
