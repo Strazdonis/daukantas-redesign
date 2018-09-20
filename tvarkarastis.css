@@ -4,7 +4,7 @@
     ================= APPLY TO =================
 
 	https://www.daukantas.lt/_ed2/mok.php
-	https://www.daukantas.lt/_ed2/mok.php?ve=smx_tv
+	URLS starting with: https://www.daukantas.lt/_ed2/mok.php?ve=smx_tv
 	
 	================== COLORS ==================
 					hex				rgb
@@ -90,4 +90,17 @@ body > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) {
 body > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) {
     text-align: right;
     width: 89vw;
+}
+.blt {
+    position: absolute;
+    width: 150px;
+    right: 10px;
+    height: auto;
+    font-size: 7px;
+    opacity: 0.3;
+    top: 60px;
+    left: unset;
+}
+.blt ul {
+    padding:0
 }
