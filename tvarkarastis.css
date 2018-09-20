@@ -104,3 +104,32 @@ body > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(
 .blt ul {
     padding:0
 }
+table, #menu-v li ul {
+    box-shadow: none !important;
+}
+h3 {
+    color:rgb(200,200,200);
+}
+.grazi table, .grazi td, .grazi th {
+    border: 1px solid rgba(255,255,255,0.2);
+    height: 40px;
+}
+.grazi tr:nth-child(2n) td {
+	background: rgba(255, 255, 255, .1);
+}
+
+.grazi tr:hover td {
+    background-color: #616161;
+    transition: 0.2s ease-in;
+    color: #fff;
+}
+.grazi a:hover {
+    color:#fff;
+}
+.grazi img[src="pic/nnauja.gif"] {
+    padding: 0px 5px;
+    filter: contrast(0%);
+}
+#menu-v a.arrow, #menu-v li a.arrow:hover {
+    background-image:none;
+}
