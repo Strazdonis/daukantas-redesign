@@ -214,3 +214,28 @@ font[color="#111111"] {
 .keicia b {
     color:rgb(103, 114, 229);
 }
+@keyframes uzaukbiski {
+    from {width: 150px; height:150px;}
+    to {width: 300px; height:auto;}
+}
+@keyframes susiprastinkbiski {
+    from {width: 300px; height:auto;}
+    to {width: 150px; height:150px;}
+}
+.blt {
+    animation-name: susiprastinkbiski;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.blt > ul {
+    transition:2s ease;
+}
+.blt:hover {
+    animation-name: uzaukbiski;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.blt:hover > ul {
+    font-size:14px;
+    transition:2s ease;
+}
