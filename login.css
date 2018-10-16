@@ -11,32 +11,32 @@
     text:		 #c8c8c8;	rgb(200,200,200);
     background1: #232323;	rgb(35,35,35);
 	background2: #191919;	rgb(25, 25, 25);
-	primary:	 ##6772e5;	rgb(103, 114, 229);
+	primary:	 #6772e5;	rgb(103, 114, 229);
 
     =========== DESIGN FUNDAMENTALS ============
 
 	some_background {
 		border-radius: 6px;
-    	background-color: #232323;
-    	border: 0;
+		background-color: #232323;
+		border: 0;
 	}
 	input {
 		background-color: #3C3C3C;
-        color: rgb(200, 200, 200);
-        border: none;
-        border-radius: 2px;
-        padding: 5px;
+		color: rgb(200, 200, 200);
+		border: none;
+		border-radius: 2px;
+		padding: 5px;
 	}
 	input:not([type="submit"]):focus {
  		box-shadow: 0 0 0 2px rgb(103, 114, 229); //because borders mess up when rounded
 	}
 	some_headline {
 		background-color: rgba(0, 0, 0, 0);
-    	border: 0;
-    	color: rgb(200, 200, 200);
-    	text-decoration: underline;
-    	float: left;
-    	padding: 10px;
+		border: 0;
+		color: rgb(200, 200, 200);
+		text-decoration: underline;
+		float: left;
+		padding: 10px;
 	}
 	light box-shadows on element made by Bukis are a no-no so remove those.
 	================= TODO =================
@@ -85,7 +85,6 @@ body > table:not(.suk)[height="95%"] > tbody:nth-child(1) > tr:nth-child(1) > td
 body > table:not(.suk)[height="95%"] > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(3) {
     height:20px;
 }
-
 table:not(.suk)[height="95%"] table i {
     background-color:rgb(103, 114, 229);
     border-radius:5px;
@@ -157,4 +156,19 @@ table:not(.suk)[height="95%"] table th {
 .suk form input[name="ok"]:hover {
     color:rgb(255, 255, 255);
     transition:0.3s ease;
+}
+/* TODO: MAKE A DARK BG LOGO
+a[href="https://www.daukantas.lt"] {
+    background: url("grazus logotipas") left top no-repeat;
+    padding: 100px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+img[src="pic/logotipasH.png"] {
+    display:none;
+}
+*/
+img[src="pic/logotipasH.png"] {
+    filter: invert(90%) opacity(50%);
 }
