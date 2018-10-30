@@ -94,7 +94,7 @@ body > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(
     text-align: right;
     width: 89vw;
 }
-.blt {
+div[class^="blt"] {
     position: absolute;
     width: 150px;
     right: 10px;
