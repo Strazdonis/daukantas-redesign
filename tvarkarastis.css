@@ -104,7 +104,7 @@ div[class^="blt"] {
     top: 60px;
     left: unset;
 }
-.blt ul {
+div[class^="blt"] ul {
     padding:0
 }
 table, #menu-v li ul {
@@ -224,20 +224,20 @@ font[color="#111111"] {
     from {width: 300px; height:auto;}
     to {width: 150px; height:150px;}
 }
-.blt {
+div[class^="blt"] {
     animation-name: susiprastinkbiski;
     animation-duration: 2s;
     animation-fill-mode: forwards;
 }
-.blt > ul {
+div[class^="blt"] > ul {
     transition:2s ease;
 }
-.blt:hover {
+div[class^="blt"]:hover {
     animation-name: uzaukbiski;
     animation-duration: 2s;
     animation-fill-mode: forwards;
 }
-.blt:hover > ul {
+div[class^="blt"]:hover > ul {
     font-size:14px;
     transition:2s ease;
 }
