@@ -276,3 +276,7 @@ img[src="pic/blue.gif"] {
     border: none;
     height: 12px;
 }
+div[class^="sena"] {
+    width: 20%;
+    height: 15%;
+}
