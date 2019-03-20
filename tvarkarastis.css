@@ -276,7 +276,7 @@ img[src="pic/blue.gif"] {
     border: none;
     height: 12px;
 }
-div[class^="sena"] {
+div[id^="Yo201"] { /* Šimtui metų užteks */
     width: 20%;
     height: 15%;
 }
